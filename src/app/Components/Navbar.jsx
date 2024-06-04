@@ -1,30 +1,25 @@
-"use client"
-import React, { useState } from 'react';
+import Image from 'next/image'
+import React from 'react'
+import logo from '../assets/logo.png'
+import Link from 'next/link'
+function Navbar() {
+  return (
+    <header className="text-gray-600 body-font">
+  <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a href='/' className="flex title-font cursor-pointer font-medium items-center text-gray-900 mb-4 md:mb-0">
+      
+       <Image src={logo} alt="logo" width={200} height={150} />
+    </a>
+    <nav className="md:ml-auto flex flex-wrap items-center text-base  justify-center">
+      <Link href="/About" className="mr-5 text-gray-400 cursor-pointer hover:text-gray-200">About</Link>
+      <Link href="/Contact" className="mr-5 text-gray-400 cursor-pointer hover:text-gray-200">Contact</Link>
+      <Link href="/Feedback" className="mr-5 text-gray-400 cursor-pointer hover:text-gray-200">Feedback</Link>
+    </nav>
+    
+  </div>
+</header>
 
-const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  )
+}
 
-    return (
-        <nav className="bg-gray-800 text-white p-4">
-            <div className="container mx-auto flex justify-between items-center">
-                <div className="text-lg font-semibold">
-                    <a href="/" className="hover:text-gray-300">InstantQR</a>
-                </div>
-                <div className="md:hidden">
-                    <button onClick={() => setIsOpen(!isOpen)}>
-                        <span className="text-white">Menu</span>
-                    </button>
-                </div>
-                <div className={`md:flex ${isOpen ? 'block' : 'hidden'} space-x-4`}>
-                    <a href="/about" className="hover:text-gray-300">About</a>
-                    <a href="/contact" className="hover:text-gray-300">Contact</a>
-                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                        Login
-                    </button>
-                </div>
-            </div>
-        </nav>
-    );
-};
-
-export default Navbar;
+export default Navbar
