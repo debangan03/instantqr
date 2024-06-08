@@ -14,13 +14,13 @@ export default function Home() {
       </section>
       <section className="md:mt-20 mt-5">
         <div className="grid md:grid-cols-2 gap-8 text-center">
-          <div className="p-4 shadow-lg shadow-blue-900 rounded-lg hover:shadow-2xl transition-shadow duration-300">
+          <div className="p-4  border-2 border-blue-400 rounded-lg">
             <h2 className="text-2xl font-semibold">Easy to Use</h2>
             <p className="text-gray-200 mt-2">
               Simply enter your URL and get a QR code instantly!
             </p>
           </div>
-          <div className="p-4 shadow-lg shadow-blue-900 rounded-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="p-4  border-2 border-blue-400 rounded-lg">
             <h2 className="text-2xl font-semibold">Completely Free</h2>
             <p className="text-gray-200 mt-2">
               No fees or subscriptions required.

@@ -14,6 +14,7 @@ function Navbar() {
       <Link href="/About" className="mr-5 text-gray-400 cursor-pointer hover:text-gray-200">About</Link>
       <Link href="/Contact" className="mr-5 text-gray-400 cursor-pointer hover:text-gray-200">Contact</Link>
       <Link href="/Feedback" className="mr-5 text-gray-400 cursor-pointer hover:text-gray-200">Feedback</Link>
+      {/* <button className='bg-blue-500 px-4 py-2 rounded-lg text-white hover:scale-105 duration-300'>Login</button> */}
     </nav>
     
   </div>
